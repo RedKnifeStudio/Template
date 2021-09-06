@@ -1,0 +1,564 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* redknife_document_templates
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-01 19:15+0000\n"
+"PO-Revision-Date: 2021-05-01 21:16+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "% discount"
+msgstr "% zniżki"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<b>Currency: </b>"
+msgstr "<b>Waluta: </b>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<b>NBP Rate: </b>"
+msgstr "<b>Kurs NBP: </b>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<b>Table: </b>"
+msgstr "<b>Tabela: </b>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_background_template
+msgid ""
+"<i class=\"fa fa-at\" role=\"img\" aria-label=\"Email\" title=\"Email\"/>"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_background_template
+msgid ""
+"<i class=\"fa fa-globe\" role=\"img\" aria-label=\"Website\" title=\"Website"
+"\"/>"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_background_template
+msgid ""
+"<i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</"
+"span>\n"
+"                <span groups=\"account.group_show_line_subtotals_tax_included"
+"\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Wartość "
+"Netto</span>\n"
+"                <span groups=\"account.group_show_line_subtotals_tax_included"
+"\">Wartość Brutto</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid ""
+"<span>\n"
+"                        VAT reverse charge rule applicable.\n"
+"                    </span>"
+msgstr ""
+"<span>\n"
+"                        Odwrotne obciążenie VAT.\n"
+"                    </span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<span> from </span>"
+msgstr "<span> z </span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<span>Disc.(%)</span>"
+msgstr "<span>Up. (%)</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "<span>Optional Products</span>"
+msgstr "<span>Produkty proponowane</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<span>Product</span>"
+msgstr "<span>Produkt</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<span>Proforma Invoice</span>"
+msgstr "<span>Faktura Proforma</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<span>VAT Rate</span>"
+msgstr "<span>Stawka VAT</span>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Podsuma</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong style=\"color: black\">Client</strong>"
+msgstr "<strong style=\"color: black\">Nabywca</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong style=\"color: black\">Seller</strong>"
+msgstr "<strong style=\"color: black\">Sprzedawca</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Client Reference:</strong>"
+msgstr "<strong>Odnośnik klienta:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Date Ordered:</strong>"
+msgstr "<strong>Data zamówienia:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Description</strong>"
+msgstr "<strong>Opis</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Termin płatności:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Expiration Date:</strong>"
+msgstr "<strong>Data ważności:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Data wystawienia:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>No.</strong>"
+msgstr "<strong>Lp.</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>Termin płatności:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Data oferty:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Sale Date:</strong>"
+msgstr "<strong>Data sprzedaży:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Sprzedawca:</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Total Amount</strong>"
+msgstr "<strong>Wartość Brutto</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "<strong>Untaxed Amount</strong>"
+msgstr "<strong>Wartość Netto</strong>"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "Amount"
+msgstr "Wartość Netto"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__invoice_partner_bank_id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__invoice_partner_bank_id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__invoice_partner_bank_id
+msgid "Bank Account"
+msgstr "Konto bankowe"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__invoice_partner_bank_id
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__invoice_partner_bank_id
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__invoice_partner_bank_id
+msgid ""
+"Bank Account Number to which the invoice will be paid. A Company bank "
+"account if this is a Customer Invoice or Vendor Credit Note, otherwise a "
+"Partner bank account number."
+msgstr ""
+"Numer konta bankowego, na które opłacona ma zostać faktura. Numer konta "
+"Twojej firmy, jeżeli jest to faktura sprzedażowa, lub korekta faktury "
+"zakupowej. W przeciwnym razie, numer konta kontrahenta."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__print_product_label
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__print_product_label
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__print_product_label
+msgid "Check this, if you want to print product labels on invoice."
+msgstr ""
+"Zaznacz to pole jeśli chcesz wyświetlić kolumnę z opisem produktu na "
+"dokumencie."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model,name:rks_polish_sales_doc_temp.model_res_company
+msgid "Companies"
+msgstr "Firmy"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_name
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__currency_name
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__currency_name
+msgid "Currency Code"
+msgstr "Kod waluty"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_table_number
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__currency_table_number
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__currency_table_number
+msgid "Currency Rate Table No"
+msgstr "Nr tabeli kursu walut"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_rate_nbp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__currency_rate_nbp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__currency_rate_nbp
+msgid "Currency rate from NBP API."
+msgstr "Kurs waluty NBP."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_table_number
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__currency_table_number
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__currency_table_number
+msgid "Currency rate table downloaded from NBP API."
+msgstr "Tabela kursu walut pobrana z NBP."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__nbp_currency_date
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__nbp_currency_date
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__nbp_currency_date
+msgid "Date from which this table was requested."
+msgstr "Data, z której tabela została pobrana."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__display_name
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_res_company__display_name
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nazwa wyświetlana"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__invoice_date_due
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__invoice_date_due
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__invoice_date_due
+msgid "Due Date"
+msgstr "Termin płatności"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_standard_template
+msgid "Email:"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__receiver
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__receiver
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__receiver
+msgid ""
+"Enable this option if you want to display a space for the Recipient's "
+"signature."
+msgstr "Zaznacz to pole jeśli chcesz wyświetlić miejsce na podpis odbiorcy."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__issuer
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__issuer
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__issuer
+msgid ""
+"Enable this option if you want to display a space for the salesperson's "
+"signature."
+msgstr "Zaznacz to pole jeśli chcesz wyświetlić miejsce na podpis sprzedawcy."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_name
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__currency_name
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__currency_name
+msgid "Help field for storing currency code."
+msgstr "Pomocne pole dla przechowywania kodu waluty."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_res_company__id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_bank_statement_line__sale_date
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_move__sale_date
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_account_payment__sale_date
+msgid "Invoice sale date."
+msgstr "Data sprzedaży faktury."
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__invoice_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__invoice_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__invoice_date
+msgid "Invoice/Bill Date"
+msgstr "Data faktury"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "Issuer"
+msgstr "Wystawił(a)"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__issuer
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__issuer
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__issuer
+#, fuzzy
+#| msgid "Issuer Sign"
+msgid "Issuer signature"
+msgstr "Podpis wystawcy"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model,name:rks_polish_sales_doc_temp.model_account_move
+msgid "Journal Entry"
+msgstr "Zapis dziennika"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move____last_update
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_res_company____last_update
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Data ostatniej modyfikacji"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_standard_template
+msgid "Logo"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__currency_rate_nbp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__currency_rate_nbp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__currency_rate_nbp
+msgid "NBP Currency Rate"
+msgstr "Kurs waluty NBP"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__nbp_currency_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__nbp_currency_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__nbp_currency_date
+msgid "NBP table date"
+msgstr "Data tabeli NBP"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_res_company__regon
+msgid "Nine-digit REGON number."
+msgstr ""
+"Dziesięciocyfrowy numer rejestru prowadzonego przez Prezesa Głównego Urzędu "
+"Statystycznego."
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "No."
+msgstr "Lp."
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "Order"
+msgstr "Zamówienie"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "PL"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_standard_template
+msgid ""
+"Page:\n"
+"                            <span class=\"page\"/>\n"
+"                            /\n"
+"                            <span class=\"topage\"/>"
+msgstr ""
+"Strona:\n"
+"                            <span class=\"page\"/>\n"
+"                            /\n"
+"                            <span class=\"topage\"/>"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__invoice_payment_term_id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__invoice_payment_term_id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__invoice_payment_term_id
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_sale_order__payment_term_id
+msgid "Payment Terms"
+msgstr "Warunki płatności"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_standard_template
+msgid "Phone:"
+msgstr "Telefon:"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "Please use the following for your payment description:<br/>"
+msgstr "W treści przelewu prosimy podać:<br/>"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__print_product_label
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__print_product_label
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__print_product_label
+msgid "Print Product Label"
+msgstr "Wyświetl opis produktu"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "Product"
+msgstr "Produkt"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "Quantity"
+msgstr "Ilość"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "Quotation"
+msgstr "Oferta"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_res_company__regon
+msgid "REGON Number"
+msgstr "Numer REGON"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "REGON:"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "Recipient"
+msgstr "Odebrał(a)"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__receiver
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__receiver
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__receiver
+msgid "Recipients signature"
+msgstr "Podpis odbiorcy"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+msgid "SWIFT Code:"
+msgstr "Kod SWIFT:"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "SWIFT:"
+msgstr ""
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_bank_statement_line__sale_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_move__sale_date
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_account_payment__sale_date
+msgid "Sale Date"
+msgstr "Data sprzedaży"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model,name:rks_polish_sales_doc_temp.model_sale_order
+msgid "Sales Order"
+msgstr "Zamówienie sprzedaży"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.redknife_report_saleorder_document_optional
+msgid "Unit Price"
+msgstr "Cena jedn"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "VAT Rate"
+msgstr "Stawka VAT"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_invoice_document
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_report_saleorder_document
+msgid "VAT:"
+msgstr "NIP:"
+
+#. module: rks_polish_sales_doc_temp
+#: model_terms:ir.ui.view,arch_db:rks_polish_sales_doc_temp.coffee_external_layout_standard_template
+msgid "Web:"
+msgstr "Strona:"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,field_description:rks_polish_sales_doc_temp.field_sale_order__company_bank_id_sale
+msgid "Your Bank Account"
+msgstr "Twoje konto bankowe"
+
+#. module: rks_polish_sales_doc_temp
+#: model:ir.model.fields,help:rks_polish_sales_doc_temp.field_sale_order__company_bank_id_sale
+msgid "Your bank account number to which the pro-forma invoice will be paid."
+msgstr ""
+"Numer Twojego konta bankowego, na które dokonana ma zostać zapłata za "
+"fakturę proforma."
+
+#~ msgid ""
+#~ "Currency rate based on ECB table from invoice issue date. Based on this "
+#~ "rate, invoice total is computed."
+#~ msgstr ""
+#~ "Kurs waluty wyliczony na podstawie Europejskiego Banku Centralnego z dnia "
+#~ "wystawienia faktury (data faktury). Na jego podstawie przeliczona została "
+#~ "wartość faktury."
+
+#~ msgid "ECB Currency Rate"
+#~ msgstr "Kurs do wyliczeń (ECB)"
+
+#~ msgid "Receiver"
+#~ msgstr "Odbiorca"
+
+#~ msgid "Receiver Sign"
+#~ msgstr "Podpis odbiorcy"
+
+#~ msgid ""
+#~ "Set this to True, if receiver signed statement, and invoice doesn't "
+#~ "require sign."
+#~ msgstr ""
+#~ "Zaznacz to pole, jeśli Odbiorca podpisał oświadczenie i faktura nie "
+#~ "wymaga podpisania."
+
+#~ msgid "Total Price"
+#~ msgstr "Brutto"
+
+#~ msgid "VAT [%]"
+#~ msgstr "Stawka VAT"

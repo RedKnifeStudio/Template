@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_move_date_view" model="ir.ui.view">
+            <field name="name">account.move.date.view</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@id='header_right_group']//field[@name='invoice_date']" position="after">
+                    <field name="sale_date" force_save="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='edi_state']" position="before">
+                    <field name="currency_name" invisible="1"/>
+                    <field name="currency_rate_nbp" attrs="{'invisible': [('currency_name', '=', 'PLN')]}"/>
+                    <field name="currency_table_number" attrs="{'invisible': [('currency_name', '=', 'PLN')]}"/>
+                    <field name="nbp_currency_date" attrs="{'invisible': [('currency_name', '=', 'PLN')]}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='team_id']" position="after">
+                    <field name="print_product_label"/>
+                    <field name="issuer"/>
+                    <field name="receiver"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
