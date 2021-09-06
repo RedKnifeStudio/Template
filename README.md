@@ -2,13 +2,13 @@
 ----
 [![OdooDocs](http://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/master/)
 
-## Moving on the Branches
+## Moving between the Branches
 ----
 
- - Any modules must be first tested on Test Branch
+ - In order to go to branch - **git checkout Test/Prod/main**
+ - Any modules before testing must be added to Test Branch
  - Every change should be included in Changelog
- - After testing merge branch Test with Production with 
- 
+ - After testing merge branch Test with Production - **git merge Prod**
 
 
 ### Odoo Instalation
