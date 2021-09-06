@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Invoice-->
+    <template id="coffee_report_invoice_document" inherit_id="account.report_invoice_document">
+        <!--Seller and client information-->
+        <xpath expr="/t/t/t[2]" position="replace">
+            <t t-set="o" t-value="o.with_context({'lang': lang})"/>
+            <div class="row" style="font-size: 13px">
+                <div class="col-5" name="company_address" style="border-top: solid black">
+                    <p>
+                        <strong style="color: black">Seller</strong>
+                    </p>
+                    <span t-field="o.company_id"/>
+                    <br/>
+                    <span t-field="o.company_id.street"/>
+                    <br/>
+                    <span t-field="o.company_id.zip"/>
+                    <span t-field="o.company_id.city"/>
+                    <br/>
+                    <t t-if="o.company_id.vat">
+                        VAT:
+                        <t t-if="o.currency_name != 'PLN'">PL</t><span t-field="o.company_id.vat"/>
+                        <br/>
+                    </t>
+                    <t t-if="o.company_id.regon">
+                        REGON:
+                        <span t-field="o.company_id.regon"/>
+                        <br/>
+                    </t>
+                <!-- Bank Account -->
+                    <t t-if="o.invoice_partner_bank_id and o.invoice_payment_term_id.id != 69">
+                        <t t-if="o.invoice_partner_bank_id.bank_id.name">
+                            <span t-field="o.invoice_partner_bank_id.bank_id.name"/><br/>
+                        </t>
+                        <t t-if="o.invoice_partner_bank_id.currency_id.name">
+                            [<span t-field="o.invoice_partner_bank_id.currency_id.name"/>]
+                        </t>
+                        <t t-if="o.invoice_partner_bank_id.currency_id.name">
+                            <span t-field="o.invoice_partner_bank_id.acc_number"/><br/>
+                        </t>
+                        <t t-if="o.currency_name != 'PLN' and o.invoice_partner_bank_id.bank_id.bic">
+                            SWIFT Code: <span t-field="o.invoice_partner_bank_id.bank_id.bic"/><br/>
+                        </t>
+                    </t>
+                </div>
+
+                <div name="invoice_address" class="col-5 offset-2"
+                     style="border-top: solid black">
+                    <p>
+                        <strong style="color: black">Client</strong>
+                    </p>
+                    <address style="margin-bottom: 0" t-field="o.partner_id"
+                             t-options="{'widget': 'contact', 'fields': ['address', 'name'], 'no_marker': True}"/>
+                    <t t-if="o.partner_id.vat">
+                        VAT: <span t-field="o.partner_id.vat"/>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+
+        <!--Decrease font size-->
+        <xpath expr="//div[@id='informations']" position="attributes">
+            <attribute name="style">font-size: 12px</attribute>
+        </xpath>
+
+        <!--Additional dates required by polish standards-->
+        <xpath expr="//div[@id='informations']/div[@name='invoice_date']" position="replace">
+            <div class="col-auto mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
+                <strong>Invoice Date:</strong>
+                <p class="m-0" t-field="o.invoice_date"/>
+            </div>
+            <div class="col-auto mw-100 mb-2" t-if="o.sale_date" name="sale_date">
+                <strong>Sale Date:</strong>
+                <p class="m-0" t-field="o.sale_date"/>
+            </div>
+        </xpath>
+
+        <!--Due date replacement for translation and condition removal-->
+        <xpath expr="//div[@id='informations']/div[@name='due_date']" position="replace">
+            <div class="col-auto mw-100 mb-2" t-if="o.invoice_date_due and o.move_type == 'out_invoice'" name="due_date">
+                <strong>Due Date:</strong>
+                <p class="m-0" t-field="o.invoice_date_due"/>
+            </div>
+        </xpath>
+
+        <!--NBP Currency table-->
+        <xpath expr="//div[@id='informations']" position="after">
+            <div class="col-4 offset-8" t-if="o.currency_name != 'PLN'" style="font-size: 12px">
+                <div><b>NBP Rate: </b><span t-field="o.currency_rate_nbp"/></div>
+                <div><b>Currency: </b><span t-field="o.currency_id.name"/></div>
+                <div>
+                    <b>Table: </b><span t-field="o.currency_table_number"/><span> from </span><span t-field="o.nbp_currency_date"/>
+                </div>
+            </div>
+            <br/>
+        </xpath>
+
+        <!--Put invoice number on the center-->
+        <xpath expr="//div[hasclass('page')]/h2" position="attributes">
+            <attribute name="style">text-align: center</attribute>
+        </xpath>
+
+        <!--Decrease font size-->
+        <xpath expr="//table[@name='invoice_line_table']" position="attributes">
+            <attribute name="style">font-size: 12px</attribute>
+        </xpath>
+
+        <!--Added position number header-->
+        <xpath expr="//thead/tr/th" position="before">
+            <th class="col-xs-1">
+                <strong>No.</strong>
+            </th>
+        </xpath>
+
+        <!--Change product representation-->
+        <xpath expr="//thead/tr/th[@name='th_description']" position="replace">
+            <th name="th_description" class="text-left">
+                <span>Product</span>
+            </th>
+            <t t-if="o.print_product_label">
+                <th class="text-left">
+                    <strong>Description</strong>
+                </th>
+            </t>
+        </xpath>
+
+        <!--Change translation-->
+        <xpath expr="//thead/tr/th[@name='th_taxes']" position="replace">
+            <th name="th_taxes"
+                t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                <span>VAT Rate</span>
+            </th>
+        </xpath>
+
+        <!--Change translation-->
+        <xpath expr="//thead/tr/th[@name='th_subtotal']" position="replace">
+            <th name="th_subtotal" class="text-right">
+                <span groups="account.group_show_line_subtotals_tax_excluded">Amount</span>
+                <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+            </th>
+        </xpath>
+
+        <!--Added position number set to 0-->
+        <xpath expr="//tbody/t" position="before">
+            <t t-set="i" t-value="1"/>
+        </xpath>
+
+        <!--Added position number-->
+        <xpath expr="//tbody//tr//td" position="before">
+            <td>
+                <span t-esc="i"/>
+            </td>
+            <t t-set="i" t-value="i+1"/>
+        </xpath>
+
+        <!--Change UoM decimal digits-->
+        <xpath expr="//tbody//tr/t/td[3]" position="replace">
+            <td class="text-right">
+                <t t-if="line.product_uom_id and line.product_uom_id.id == 1">
+                    <span t-esc="int(line.quantity)"/>
+                </t>
+                <t t-else="">
+                    <span t-field="line.quantity"/>
+                </t>
+                <span t-field="line.product_uom_id" groups="uom.group_uom"/>
+            </td>
+        </xpath>
+
+        <!--Change location class-->
+        <xpath expr="//tbody//tr/t/td[4]" position="replace">
+            <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+            </td>
+        </xpath>
+
+        <!--Change location class-->
+        <xpath expr="//tbody//tr/t/td[6]" position="replace">
+            <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                <span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_ids))" id="line_tax_ids"/>
+            </td>
+        </xpath>
+
+        <!--Change product representation (get data from fields)-->
+        <xpath expr="//tbody//tr//td[@name='account_invoice_line_name']" position="replace">
+            <td name="internal_code" class="text-left">
+                <span t-field="line.product_id.display_name"/>
+            </td>
+            <t t-if="o.print_product_label">
+                <td name="account_invoice_line_name">
+                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                </td>
+            </t>
+        </xpath>
+
+        <!--Decrease font size-->
+        <xpath expr="//div[hasclass('page')]" position="attributes">
+            <attribute name="style">font-size: 12px</attribute>
+        </xpath>
+
+        <!--Summary table overwrite for translation purposes-->
+        <xpath expr="//div[@id='total']//table//td" position="replace">
+            <td>
+                <strong>Untaxed Amount</strong>
+            </td>
+        </xpath>
+
+        <xpath expr="//div[@id='total']//table/tr[2]/td" position="replace">
+            <td>
+                <strong>Total Amount</strong>
+            </td>
+        </xpath>
+
+        <!--Add if condition for esthetics-->
+        <xpath expr="//div[hasclass('page')]/p" position="replace">
+            <div class="col-7" style="font-size: 12px">
+                <div t-if="o.invoice_payment_term_id" name="payment_term_ext">
+                    <span t-field="o.invoice_payment_term_id.note"/>
+                </div>
+
+                <div t-if="o.move_type in ('out_invoice', 'in_refund') and o.payment_reference and o.invoice_payment_term_id.id != 69">
+                    Please use the following for your payment description:<br/>
+                    <b><span t-field="o.payment_reference"/></b>
+                </div>
+
+                <!--Add MTT description-->
+                <br/>
+                <t t-if="o.partner_id.country_id.code == 'PL'">
+                    <span>
+                        
+                    </span>
+                </t>
+                <t t-else="">
+                    <span>
+                        VAT reverse charge rule applicable.
+                    </span>
+                </t>
+            </div>
+            <br/>
+        </xpath>
+
+        <!--Decrease font size for formatting purposes-->
+        <xpath expr="//div[hasclass('page')]//p[@name='comment']" position="attributes">
+            <attribute name="style">font-size: 12px</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('page')]//p[@name='payment_term']" position="replace"/>
+
+        <!--Issuer and receiver fields-->
+        <xpath expr="//div[hasclass('page')]//p[@name='note']" position="after">
+            <br/>
+            <div class="row text-center" style="font-size: 12px">
+                <t t-if="o.issuer">
+                    <div class="col-4">
+                        <span t-field="o.invoice_user_id"/>
+                        <p style="border-top: 1px solid black">Issuer</p>
+                    </div>
+                </t>
+
+                <t t-if="o.receiver">
+                    <div class="col-4 offset-4">
+                        <br/>
+                        <p style="border-top: 1px solid black">Recipient</p>
+                    </div>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>

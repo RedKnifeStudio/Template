@@ -1,0 +1,15 @@
+<odoo>
+
+    <record id="nbp_currency_rate_update_cron" model="ir.cron">
+        <field name="name">NBP Currency Rate Update</field>
+        <field name="model_id" ref="base.model_res_currency"/>
+        <field name="state">code</field>
+        <field name="code">model.nbp_currency_rate_update()</field>
+        <field name="active" eval="True"/>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">4</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+</odoo>

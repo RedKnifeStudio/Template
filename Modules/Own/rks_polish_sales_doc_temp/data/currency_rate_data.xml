@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record forcecreate="True" id="decimal_nbp_currency_rate" model="decimal.precision">
+            <field name="name">NBP Currency Rate</field>
+            <field name="digits">4</field>
+        </record>
+
+        <record forcecreate="True" id="decimal_ebc_currency_rate" model="decimal.precision">
+            <field name="name">ECB Currency Rate</field>
+            <field name="digits">4</field>
+        </record>
+    </data>
+</odoo>
