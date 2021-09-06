@@ -11,9 +11,9 @@
 
 1. Created template for RedKnife Studio GitHub Repository
 
-**next change**
+**next change date**
 
-
+----
 ### Moving between the Branches
 ----
 
@@ -22,13 +22,14 @@
  - Every change should be included in ChangeLog above in .README
  - After testing merge branch Test with Production - **git merge Prod**
 
-
+----
 #### Odoo Instalation
 ----
 
 For an installation please follow the <a href="https://docs.google.com/document/d/10VVQVLrepNTJucuF8qVKm10-Sm9ChrJddxK4090fzfU/edit?usp=sharing" target="_blank">Setup instructions</a>
 from the documentation.
 
+----
 #### NGINX Instalation
 ----
 
@@ -41,3 +42,6 @@ from the documentation.
 7. Follow to the Scripts directory 
 8. Use script using **sudo ./nginx_ssl_odoo_v.2.2.0.sh**
 9. Follow installation
+----
+
+*Project **Project name** for **Company name** made by RedKnife Studio sp. z o.o.*
