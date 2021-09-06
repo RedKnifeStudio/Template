@@ -1,23 +1,35 @@
 ## [![RedKnife](https://redknife-studio.pl/web/image/website/1/logo/RedKnife%20Studio?unique=323bc66)](https://odoo.redknife-studio.pl/)
 ----
 [![OdooDocs](http://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/master/)
-
-## Moving between the Branches
+----
+# Project Name 
 ----
 
- - In order to go to branch - **git checkout Test/Prod/main**
- - Any modules before testing must be added to Test Branch
- - Every change should be included in Changelog
+## ChangeLog
+
+**06.09.2021r.** 
+
+1. Created template for RedKnife Studio GitHub Repository
+
+**next change**
+
+
+### Moving between the Branches
+----
+
+ - In order to change branch - **git checkout Test/Prod/main**
+ - Any modules before testing must be added to *Test Branch*
+ - Every change should be included in ChangeLog above in .README
  - After testing merge branch Test with Production - **git merge Prod**
 
 
-### Odoo Instalation
+#### Odoo Instalation
 ----
 
 For an installation please follow the <a href="https://docs.google.com/document/d/10VVQVLrepNTJucuF8qVKm10-Sm9ChrJddxK4090fzfU/edit?usp=sharing" target="_blank">Setup instructions</a>
 from the documentation.
 
-### NGINX Instalation
+#### NGINX Instalation
 ----
 
 1. Clone Repository to local VM. 
